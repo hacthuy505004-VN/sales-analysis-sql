@@ -5,9 +5,10 @@ Sales data analysis using SQL (aggregation, ranking, insights)
 Dự án phân tích dữ liệu bán hàng sử dụng SQL Server.
 
 ## Features
-- Revenue analysis by product
-- Top customers by spending
-- Daily sales report
+- Phân tích doanh thu theo sản phẩm
+- Xác định khách hàng chi tiêu nhiều nhất
+- Báo cáo doanh thu theo thời gian
+- Sử dụng các hàm tổng hợp và xếp hạng
 
 ## Technologies
 - SQL Server
