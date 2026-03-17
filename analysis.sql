@@ -17,3 +17,13 @@ SELECT sale_date, SUM(quantity * price) AS daily_revenue
 FROM Sales s
 JOIN Products p ON s.product_id = p.product_id
 GROUP BY sale_date;
+
+-- Top sản phẩm 
+SELECT product_name, revenue,
+RANK() OVER (ORDER BY revenue DESC) AS ranking
+FROM (
+    SELECT p.product_name, SUM(s.quantity * p.price) AS revenue
+    FROM Sales s
+    JOIN Products p ON s.product_id = p.product_id
+    GROUP BY p.product_name
+) t;
