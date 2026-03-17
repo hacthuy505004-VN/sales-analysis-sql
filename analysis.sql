@@ -27,3 +27,11 @@ FROM (
     JOIN Products p ON s.product_id = p.product_id
     GROUP BY p.product_name
 ) t;
+
+-- Doanh thu theo tháng 
+SELECT 
+    FORMAT(sale_date, 'yyyy-MM') AS month,
+    SUM(quantity * price) AS revenue
+FROM Sales s
+JOIN Products p ON s.product_id = p.product_id
+GROUP BY FORMAT(sale_date, 'yyyy-MM');
