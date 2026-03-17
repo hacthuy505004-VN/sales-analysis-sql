@@ -1,23 +1,28 @@
 # sales-analysis-sql
 Sales data analysis using SQL (aggregation, ranking, insights)
 
-## 📌 Overview
+## Overview
 Dự án phân tích dữ liệu bán hàng sử dụng SQL Server.
 
-## 📊 Features
+## Features
 - Revenue analysis by product
 - Top customers by spending
 - Daily sales report
 
-## 🚀 Technologies
+## Technologies
 - SQL Server
 
-## ▶️ How to run
+## How to run
 1. Run create_tables.sql
 2. Run insert_data.sql
 3. Run analysis.sql
 
-## 📈 Example Insight
+## Example Insight
 - Identify best-selling products
 - Find top customers
 - Track revenue trends
+
+## Insights
+- Laptop generates highest revenue
+- Customer Van is the top spender
+- Sales increased over time
